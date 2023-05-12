@@ -16,6 +16,16 @@ public class Calculadora {
 	public int Resta () {
 		return x - y;
 	}
+	
+	public int Multiplica () {
+		return x * y;
+	}
+	
+	public int Divide () {
+		return x / y;
+	}
+	
+	
 
 	@Override
 	public String toString() {
