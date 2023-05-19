@@ -22,8 +22,15 @@ public class Calculadora {
 		return x * y;
 	}
 	
-	public int Divide () {
-		return x / y;
+	public int Divide () 
+		//Excepcion Dividir entre Cero. Silvia Peguero Palafox
+			if (y==0) {
+				System.out.println("Error...");
+				System.out.println("No se puede dividir entre 0");
+				return 0;
+			}else {
+				return x / y;
+			}
 	}
 
 	@Override
