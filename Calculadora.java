@@ -65,5 +65,14 @@ public class Calculadora {
 		return media;
 	}
 	
+	// Modificacion Alvaro G
+	
+	public int Potencia() {
+        int result ;
+        for (int i = 2; i <= y; i++) {
+            result *= x;
+        }
+        return result;
+    }
 	
 }
