@@ -31,6 +31,39 @@ public class Calculadora {
 		return "Calculadora [x=" + x + ", y=" + y + ", Suma =" + Suma() + ", Resta =" + Resta() + "]";
 	}
 	
+	public static double media(double[] nums) {
+		
+		if (nums==null || nums.length==0) {
+			return 0;
+		}
+		
+		double media=0;
+		
+		for (int i=0; i<nums.length; i++) {
+			media+=nums[i];
+		}
+		
+		media=media/nums.length;
+		
+		return media;
+	}
+	
+	public static double media(int[] nums) {
+		
+		if (nums==null || nums.length==0) {
+			return 0;
+		}
+		
+		double media=0;
+		
+		for (int i=0; i<nums.length; i++) {
+			media+=nums[i];
+		}
+		
+		media=media/nums.length;
+		
+		return media;
+	}
 	
 	
 }
