@@ -23,7 +23,14 @@ public class Calculadora {
 	}
 	
 	public int Divide () {
-		return x / y;
+		//Control de division entre 0. Metodo de Silvia
+		if (y==0){
+			System.out.println("Error...");
+			System.out.println("No se puede dividir entre 0");
+			return 0;
+		}else
+			return x / y;
+		}
 	}
 
 	@Override
